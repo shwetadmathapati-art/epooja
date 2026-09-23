@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { PoojaCard, type Pooja } from "@/components/site/cards";
-import { Button } from "@/components/ui/button";
+import { PoojaCard, type Pooja } from "@/Components/site/cards";
+import { Button } from "@/Components/UI/button";
 
 export const Route = createFileRoute("/poojas")({
   head: () => ({

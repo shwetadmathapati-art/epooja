@@ -1,11 +1,11 @@
-import heroDiya from "@/assets/hero-diya.jpg";
-import priest1 from "@/assets/priest-1.jpg";
-import priest2 from "@/assets/priest-2.jpg";
-import priest3 from "@/assets/priest-3.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import heroDiya from "@/Assets/hero-diya.jpg";
+import priest1 from "@/Assets/priest-1.jpg";
+import priest2 from "@/Assets/priest-2.jpg";
+import priest3 from "@/Assets/priest-3.jpg";
+import gallery1 from "@/Assets/gallery-1.jpg";
+import gallery2 from "@/Assets/gallery-2.jpg";
+import gallery3 from "@/Assets/gallery-3.jpg";
+import gallery4 from "@/Assets/gallery-4.jpg";
 
 export const imageMap: Record<string, string> = {
   hero: heroDiya,

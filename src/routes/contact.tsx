@@ -2,10 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/Components/UI/button";
+import { Input } from "@/Components/UI/input";
+import { Label } from "@/Components/UI/label";
+import { Textarea } from "@/Components/UI/textarea";
 import { useAuth } from "@/hooks/useAuth";
 
 export const Route = createFileRoute("/contact")({

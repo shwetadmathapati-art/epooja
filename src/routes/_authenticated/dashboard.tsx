@@ -4,7 +4,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth, useRoles } from "@/hooks/useAuth";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/UI/button";
 import { inr, prettyDate, statusLabel } from "@/lib/epooja";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({

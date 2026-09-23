@@ -5,11 +5,11 @@ import { toast } from "sonner";
 import { Check, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { PriestCard, type Priest, type Pooja } from "@/components/site/cards";
+import { Button } from "@/Components/UI/button";
+import { Input } from "@/Components/UI/input";
+import { Label } from "@/Components/UI/label";
+import { Textarea } from "@/Components/UI/textarea";
+import { PriestCard, type Priest, type Pooja } from "@/Components/site/cards";
 import {
   distanceKm,
   inr,

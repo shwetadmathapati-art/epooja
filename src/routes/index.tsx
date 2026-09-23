@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { CalendarHeart, ShieldCheck, Sparkles } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
-import { Button } from "@/components/ui/button";
-import { PanchangStrip } from "@/components/site/PanchangStrip";
-import { PoojaCard, PriestCard, type Pooja, type Priest } from "@/components/site/cards";
+import { Button } from "@/Components/UI/button";
+import { PanchangStrip } from "@/Components/site/PanchangStrip";
+import { PoojaCard, PriestCard, type Pooja, type Priest } from "@/Components/site/cards";
 import { heroImage, imageFor, prettyDate, todayISO } from "@/lib/epooja";
 
 export const Route = createFileRoute("/")({

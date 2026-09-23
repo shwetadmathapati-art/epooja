@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-import { PriestCard, type Priest } from "@/components/site/cards";
-import { Button } from "@/components/ui/button";
+import { PriestCard, type Priest } from "@/Components/site/cards";
+import { Button } from "@/Components/UI/button";
 
 export const Route = createFileRoute("/priests")({
   head: () => ({
