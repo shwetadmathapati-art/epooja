@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Clock, MapPin, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/UI/button";
 import { imageFor, inr } from "@/lib/epooja";
 
 export type Pooja = {

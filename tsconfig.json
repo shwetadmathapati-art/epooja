@@ -25,10 +25,10 @@
     "noUncheckedSideEffectImports": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/components/*": ["./src/Components/*"],
-      "@/assets/*": ["./src/Assets/*"],
-      "@/site/*": ["./src/Components/site/*"],
-      "@/ui/*": ["./src/Components/UI/*"]
+      "@/Components/*": ["./src/Components/*"],
+      "@/Assets/*": ["./src/Assets/*"],
+      "@/Components/site/*": ["./src/Components/site/*"],
+      "@/Components/UI/*": ["./src/Components/UI/*"]
     }
   }
 }

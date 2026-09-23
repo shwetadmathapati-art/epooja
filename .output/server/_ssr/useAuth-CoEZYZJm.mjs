@@ -1,6 +1,6 @@
 import { n as __toESM } from "../_runtime.mjs";
-import { t as supabase } from "./client-Drb7wB_Z.mjs";
 import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { t as supabase } from "./client-Drb7wB_Z.mjs";
 import processModule from "node:process";
 //#region node_modules/.nitro/vite/services/ssr/assets/useAuth-CoEZYZJm.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
