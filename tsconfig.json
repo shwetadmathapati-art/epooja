@@ -26,9 +26,17 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/Components/*": ["./src/Components/*"],
+      "@/components/*": ["./src/Components/*"],
       "@/Assets/*": ["./src/Assets/*"],
+      "@/assets/*": ["./src/Assets/*"],
       "@/Components/site/*": ["./src/Components/site/*"],
-      "@/Components/UI/*": ["./src/Components/UI/*"]
+      "@/site/*": ["./src/Components/site/*"],
+      "@/Components/UI/*": ["./src/Components/UI/*"],
+      "@/ui/*": ["./src/Components/UI/*"],
+      "@/Hooks/*": ["./src/Hooks/*"],
+      "@/Hooks/*": ["./src/Hooks/*"],
+      "@/integrations/*": ["./src/integrations/*"],
+      "@/lib/*": ["./src/lib/*"]
     }
   }
 }

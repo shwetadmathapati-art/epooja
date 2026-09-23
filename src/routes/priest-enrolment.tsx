@@ -4,7 +4,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { Loader2, ShieldCheck } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
-import { useAuth } from "@/hooks/useAuth";
+import { useAuth } from "@/Hooks/useAuth";
 import { Button } from "@/Components/UI/button";
 import { Input } from "@/Components/UI/input";
 import { Label } from "@/Components/UI/label";

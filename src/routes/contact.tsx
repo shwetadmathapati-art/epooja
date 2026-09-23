@@ -6,7 +6,7 @@ import { Button } from "@/Components/UI/button";
 import { Input } from "@/Components/UI/input";
 import { Label } from "@/Components/UI/label";
 import { Textarea } from "@/Components/UI/textarea";
-import { useAuth } from "@/hooks/useAuth";
+import { useAuth } from "@/Hooks/useAuth";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
