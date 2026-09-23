@@ -24,7 +24,11 @@
     "exactOptionalPropertyTypes": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/Components/*"],
+      "@/assets/*": ["./src/Assets/*"],
+      "@/site/*": ["./src/Components/site/*"],
+      "@/ui/*": ["./src/Components/UI/*"]
     }
   }
 }
