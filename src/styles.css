@@ -1,0 +1,170 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Aura ePooja — "Nocturne devotional" design system.
+ * Deep purple-black night, saffron→maroon ritual gradients, brass accents.
+ * All colors in oklch. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-saffron: var(--saffron);
+  --color-maroon: var(--maroon);
+  --color-brass: var(--brass);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  --background: oklch(0.16 0.035 305);
+  --foreground: oklch(0.93 0.015 300);
+  --surface: oklch(0.21 0.04 302);
+  --surface-2: oklch(0.25 0.045 300);
+
+  --card: oklch(0.21 0.04 302);
+  --card-foreground: oklch(0.93 0.015 300);
+  --popover: oklch(0.2 0.04 302);
+  --popover-foreground: oklch(0.93 0.015 300);
+
+  --primary: oklch(0.74 0.17 55);
+  --primary-foreground: oklch(0.19 0.05 30);
+  --secondary: oklch(0.27 0.05 300);
+  --secondary-foreground: oklch(0.93 0.015 300);
+  --muted: oklch(0.25 0.04 300);
+  --muted-foreground: oklch(0.72 0.03 300);
+  --accent: oklch(0.3 0.06 300);
+  --accent-foreground: oklch(0.95 0.015 300);
+  --destructive: oklch(0.6 0.2 20);
+  --destructive-foreground: oklch(0.97 0.01 300);
+
+  --border: oklch(0.32 0.045 300);
+  --input: oklch(0.3 0.045 300);
+  --ring: oklch(0.74 0.17 55);
+
+  --saffron: oklch(0.78 0.17 62);
+  --maroon: oklch(0.44 0.15 20);
+  --brass: oklch(0.82 0.11 88);
+
+  --gradient-ritual: linear-gradient(135deg, var(--saffron), var(--maroon));
+  --gradient-night: radial-gradient(
+    120% 90% at 50% -10%,
+    oklch(0.29 0.075 305) 0%,
+    oklch(0.16 0.035 305) 60%
+  );
+  --shadow-glow: 0 18px 60px -18px oklch(0.74 0.17 55 / 0.45);
+  --shadow-soft: 0 12px 40px -20px oklch(0 0 0 / 0.8);
+
+  --chart-1: oklch(0.78 0.17 62);
+  --chart-2: oklch(0.62 0.13 300);
+  --chart-3: oklch(0.72 0.12 180);
+  --chart-4: oklch(0.6 0.18 20);
+  --chart-5: oklch(0.82 0.11 88);
+
+  --sidebar: oklch(0.19 0.04 303);
+  --sidebar-foreground: oklch(0.93 0.015 300);
+  --sidebar-primary: oklch(0.78 0.17 62);
+  --sidebar-primary-foreground: oklch(0.19 0.05 30);
+  --sidebar-accent: oklch(0.27 0.05 300);
+  --sidebar-accent-foreground: oklch(0.95 0.015 300);
+  --sidebar-border: oklch(0.32 0.045 300);
+  --sidebar-ring: oklch(0.78 0.17 62);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background: var(--gradient-night);
+    background-attachment: fixed;
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility ritual-gradient {
+  background-image: var(--gradient-ritual);
+}
+
+@utility text-ritual {
+  background-image: var(--gradient-ritual);
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glass-panel {
+  background-color: color-mix(in oklab, var(--surface) 75%, transparent);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-soft);
+}
+
+@utility glow-ring {
+  box-shadow: var(--shadow-glow);
+}
+
+@utility label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
